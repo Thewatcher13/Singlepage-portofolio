@@ -9,159 +9,220 @@
   <title>Frontend Mentor | Single-page developer portfolio</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+
   <header>
-    <p>adamkeyes</p>
-    <a href="" aria-label="github"><img src="./assets/images/icon-github.svg" alt=""></a>
-    <a href="" aria-label="linkedin"><img src="./assets/images/icon-linkedin.svg" alt=""></a>
-    <a href="" aria-label="twitter"><img src="./assets/images/icon-twitter.svg" alt=""></a>
-    <a href="" aria-label="frontend-mentor"><img src="./assets/images/icon-frontend-mentor.svg" alt=""></a>
+    <p>JOACHIM</p>
+    <div class="flex__container">
+      <a href="" aria-label="github"><img src="/starter-code/assets/images/icon-github.svg" alt=""></a>
+      <a href="" aria-label="linkedin"><img src="/starter-code/assets/images/icon-linkedin.svg" alt=""></a>
+      <a href="" aria-label="twitter"><img src="/starter-code/assets/images/icon-twitter.svg" alt=""></a>
+      <a href="" aria-label="frontend-mentor"><img src="/starter-code/assets/images/icon-frontend-mentor.svg" alt=""></a>
+    </div>
   </header>
 
     <main>
       <section>
-        <img src="./assets/images/image-profile-mobile.webp" alt="adamkeyes">
-        <h1>Nice to meet you! I'm Adam Keyes.</h1>
+        <picture>
+          <source srcset="/starter-code/assets/images/unnamed.jpg" media= "(min-width: 1024px)">
+          <source srcset="/starter-code/assets/images/image-profile-tablet.webp" media="(min-width: 768px)">
+          <img class="profile__picture" src="/starter-code/assets/images/Screenshot_20220925-134835_Photos.jpg" alt="adamkeyes">
+        </picture>
+        <h1 class="greeting__intro">Hallo! Ik ben <span class="name">Joachim Claessens</span>.</h1>
 
-        <p>Based in the UK, I'm a front-end developer passionate about 
-        building accessible web apps that users love.</p>
+        <p class="intro__text">
+          Doorzetter, leergierig en nieuwsgierig zijn drie woorden die me omschrijven.
+          Op deze site ontdek je wie ik ben en wat me passioneert.
+          Graag neem ik je mee op een avontuur vol code en plezier.
+        </p>
 
-        <a href="">Contact</a>
+        <h2 class="who">Wie?</h2>
+        <p>Joachim, een 24 jarige gast, woont samen met Mirthe (vriendin) en Ewy (kat) in het mooie Kuringen, Hasselt.</p>
+        <h2 class="hobby">Hobby's</h2>
+        <ul role="list">
+          <li>Aikido</li>
+          <li>Balintawak</li>
+          <li>IT</li>
+          <li>Muziek luisteren</li>
+        </ul>
+        <a href="" class="primary__btn">Contact</a>
       </section>
-
+      <hr>
+      
     <section>
-      <h2>Skills</h2>
-      <ul>
+      <h2 class="title__skills">Skills</h2>
+
+      <ul class="skill__list" role="list">
 
         <li>
-          <h3>HTML</h3> 
-          <span>4 Years Experience</span>
+          <img class="html5__logo" src="/starter-code/assets/images/html5.png" alt=""> 
+          <span>Basiskennis</span>
         </li>
 
         <li>
-          <h3>CSS</h3> 
-          <span> 4 Years Experience</span>
+          <img class="css__logo" src="/starter-code/assets/images/css.png" alt=""> 
+          <span> Basiskennis</span>
         </li>
 
         <li>
-          <h3>JavaScript</h3> 
-          <span> 4 Years Experience</span>
+          <img class="js__logo" src="/starter-code/assets/images/javascript.png" alt=""> 
+          <span> Basiskennis</span>
         </li>
 
         <li>
-          <h3>Accessibility</h3> 
-          <span> 4 Years Experience</span>
+          <img class="git__logo" src="/starter-code/assets/images/Git-Logo-White.png" alt=""> 
+          <span> Basiskennis</span>
         </li>
-
-        <li>
-          <h3>React</h3> 
-          <span> 4 Years Experience</span>
-        </li>
-
-        <li>
-          <h3>Sass</h3>
-          <span> 4 Years Experience</span>
-        </li>
-
       </ul>
+
+
     </section>
 
-      <section>
-        <div class="flex__box">
-          <h2>Projects</h2>
-          <a href="">Contact me</a>
+    <hr>
+
+      <section class="projects">
+        <div class="flex__container__projects">
+          <h2 class="project__chapter__title">Projecten</h2>
+          <a class="secondary__btn" href="">Contact</a>
         </div>
-        <ul>
-          <img src="./assets/images/thumbnail-project-1-small.webp" alt="preview of design portofolio">
-          <h3>Design portfolio</h3>
-          <li>
-            HTML 
-            CSS
-          </li>
-            <a href="">View project</a>
-            <a href="">View code</a> 
 
-          <img src="./assets/images/thumbnail-project-2-small.webp" alt="preview of E-learning landing page">
-          <h3>E-learning landing page</h3>
-          <li>
-            HTML 
-            CSS
-          </li>
-            <a href="">View project</a>
-            <a href="">View code</a> 
+        <div class="wrapper__list__of__projects">
+          <div>
+            <img src="/starter-code/assets/images/thumbnail-project-1-small.webp" alt="preview of design portofolio">
+            <h3 class="title__project">Design portfolio</h3>
+            <ul role="list">
+              <li class="project__languages" >
+                <span>HTML</span> 
+                <span>CSS</span>
+              </li>
+            </ul>
+            <div class="third__btn">
+              <a href="">View project</a>
+              <a href="">View code</a>
+            </div> 
+          </div>
 
-          <img src="./assets/images/thumbnail-project-3-small.webp" alt="preview of the todo-web-app">
-          <h3>Todo web app</h3>
-          <li>
-            HTML 
-            CSS
-            JavaScript
-          </li>
-            
-            <a href="">View project</a>
-            <a href="">View code</a> 
+          <div>
+            <img src="/starter-code/assets/images/thumbnail-project-2-small.webp" alt="preview of E-learning landing page">
+            <h3 class="title__project">E-learning landing page</h3>
+            <ul role="list">
+              <li class="project__languages" >
+                <span>HTML</span> 
+                <span>CSS</span>
+              </li>
+            </ul>
+            <div class="third__btn">
+              <a href="">View project</a>
+              <a href="">View code</a>
+            </div> 
+          </div>
 
-          <img src="./assets/images/thumbnail-project-4-small.webp" alt="preview of the Entertainment web app">
-          <h3>Entertainment web app</h3>
-          <li>
-            HTML 
-            CSS
-            JavaScript
-          </li>
-            <a href="">View project</a>
-            <a href="">View code</a> 
+          <div>
+            <img src="/starter-code/assets/images/thumbnail-project-3-small.webp" alt="preview of the todo-web-app">
+            <h3 class="title__project">Todo web app</h3>
+            <ul role="list">
+              <li class="project__languages" >
+                <span>HTML</span> 
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </li>
+            </ul>
+            <div class="third__btn">
+              <a href="">View project</a>
+              <a href="">View code</a>
+            </div> 
+          </div> 
 
-          <img src="./assets/images/thumbnail-project-5-small.webp" alt=" preview of the memory game">
-          <h3>Memory Game</h3>
-            <li>
-              HTML 
-              CSS
-              JavaScript
-            </li>
-            <a href="">View project</a>
-            <a href="">View code</a> 
+          <div>
+            <img src="/starter-code/assets/images/thumbnail-project-4-small.webp" alt="preview of the Entertainment web app">
+            <h3 class="title__project">Entertainment web app</h3>
+            <ul role="list">
+              <li class="project__languages" >
+                <span>HTML</span> 
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </li>
+            </ul>
+            <div class="third__btn">
+              <a href="">View project</a>
+              <a href="">View code</a>
+            </div> 
+          </div>
 
-          <img src="./assets/images/thumbnail-project-6-small.webp" alt="preview of the art gallery showcase">
-          <h3>Art gallery showcase</h3>
-            <li>
-              HTML 
-              CSS
-              JavaScript
-            </li>
-            <a href="">View project</a>
-            <a href="">View code</a> 
-        </section>
-      </ul>
-      <h2>Contact</h2>
+          <div>
+            <img src="/starter-code/assets/images/thumbnail-project-5-small.webp" alt=" preview of the memory game">
+            <h3 class="title__project">Memory Game</h3>
+            <ul role="list">
+              <li class="project__languages" >
+                <span>HTML</span> 
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </li>
+            </ul>
+              <div class="third__btn">
+                <a href="">View project</a>
+                <a href="">View code</a>
+              </div> 
+          </div>
 
-      <p>
-        I would love to hear about your project and how I could help. Please 
-        fill in the form, and I’ll get back to you as soon as possible.
-      </p>
-
-      <form action="">
-
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
+          <div>
+            <img src="/starter-code/assets/images/thumbnail-project-6-small.webp" alt="preview of the art gallery showcase">
+            <h3 class="title__project">Art gallery showcase</h3>
+            <ul role="list">
+              <li class="project__languages" >
+                <span>HTML</span> 
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </li>
+            </ul>
+              <div class="third__btn">
+                <a href="">View project</a>
+                <a href="">View code</a>
+              </div> 
+          </div>
         
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-        
-        <label for="message">Message</label>
-        <input type="text" id="message" name="message">
-        
-        <button>Send message</button>
-      
-
-      </form>
+        </div>
+      </section>
     </main>
-      <footer>
-        <p>adamkeyes</p>
-        <a href="" aria-label="github"><img src="./assets/images/icon-github.svg" alt=""></a>
-        <a href="" aria-label="linkedin"><img src="./assets/images/icon-linkedin.svg" alt=""></a>
-        <a href="" aria-label="twitter"><img src="./assets/images/icon-twitter.svg" alt=""></a>
-        <a href="" aria-label="frontend-mentor"><img src="./assets/images/icon-frontend-mentor.svg" alt=""></a>
-      </footer>
 
+      <section class="contact__section">
+        <div class="grid__container">
+        <h2>Contact</h2>
+
+        <p>
+         Laat gerust van je horen!
+        </p>
+        </div>
+
+        <form action="">
+          <div>
+            <!-- <label class="label__form" for="name">Name</label> -->
+            <input class="input__form" type="text" id="name" name="name" placeholder="Name">
+          </div>
+          
+          <div>
+            <!-- <label class="label__form" for="email">Email</label> -->
+            <input class="input__form" type="email" id="email" name="email" placeholder="Email">
+          </div>
+          
+          <div>
+            <!-- <label class="label__form" for="message">Message</label> -->
+            <input class="input__form" type="text" id="message" name="message" placeholder="Message">
+          </div>
+          <button class="fourth__button">Send message</button>
+        
+        </form>
+
+        <footer>
+          <p>Joachim</p>
+          <div class="flex__container__footer">
+            <a href="" aria-label="github"><img src="/starter-code/assets/images/icon-github.svg" alt=""></a>
+            <a href="" aria-label="linkedin"><img src="/starter-code/assets/images/icon-linkedin.svg" alt=""></a>
+            <a href="" aria-label="twitter"><img src="/starter-code/assets/images/icon-twitter.svg" alt=""></a>
+            <a href="" aria-label="frontend-mentor"><img src="/starter-code/assets/images/icon-frontend-mentor.svg" alt=""></a>
+          </div>
+        </footer>
+      </section>
 </body>
 </html>
